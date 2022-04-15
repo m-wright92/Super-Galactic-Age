@@ -13,6 +13,10 @@ describe ('userObj', () => {
 
   test('should return the users age in mercury-years', () => {
     user.mercury(user.age);
-    expect(user.mercAge).toEqual(120)
+    expect(user.mercAge).toEqual(120);
   })
-})
+
+  test('should return the users age in venus-years', () => {
+    expect(user.venAge).toEqual(46);
+  })
+});
