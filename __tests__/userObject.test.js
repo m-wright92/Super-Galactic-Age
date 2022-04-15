@@ -22,7 +22,7 @@ describe ('userObj', () => {
   })
 
   test('should return the users age in mars-years', () => {
-    // user.mars(user.age)
+    user.mars(user.age)
     expect(user.marAge).toEqual(15);
   })
   
