@@ -9,20 +9,20 @@ export default class UserObject {
     this.lifeExp = 0;
   }
 
-  mercury(age) {
-    this.mercAge += Math.floor((age / 0.24));
+  mercury() {
+    this.mercAge += Math.floor((this.age / 0.24));
   }
 
-  venus(age) {
-    this.venAge += Math.floor((age / 0.62));
+  venus() {
+    this.venAge += Math.floor((this.age / 0.62));
   }
 
-  mars(age) {
-    this.marAge += Math.floor((age / 1.88));
+  mars() {
+    this.marAge += Math.floor((this.age / 1.88));
   }
 
-  jupiter(age) {
-    this.jupAge += Math.floor((age / 11.86));
+  jupiter() {
+    this.jupAge += Math.floor((this.age / 11.86));
   }
 
   lifeExpect(age) {

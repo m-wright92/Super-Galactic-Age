@@ -38,4 +38,8 @@ describe ('userObj', () => {
     oldUser.lifeExpect(oldUser.age);
     expect(oldUser.lifeExp).toEqual(11);
   })
+
+  test('should return remaining years of life based off different planetary age', () => {
+    user.mercury()
+  })
 });
