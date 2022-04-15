@@ -4,6 +4,7 @@ export default class UserObject {
     this.age = age;
     this.mercAge = 0;
     this.venAge = 0;
+    this.mercAge = 0;
   }
 
   mercury(age) {

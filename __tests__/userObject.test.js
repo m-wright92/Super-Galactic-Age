@@ -20,4 +20,10 @@ describe ('userObj', () => {
     user.venus(user.age)
     expect(user.venAge).toEqual(46);
   })
+
+  test('should return the users age in mars-years', () => {
+    // user.mars(user.age)
+    expect(user.marAge).toEqual(15);
+  })
+  
 });
