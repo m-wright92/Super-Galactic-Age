@@ -5,6 +5,7 @@ export default class UserObject {
     this.mercAge = 0;
     this.venAge = 0;
     this.marAge = 0;
+    this.jupAge = 0;
   }
 
   mercury(age) {
@@ -17,5 +18,9 @@ export default class UserObject {
 
   mars(age) {
     this.marAge += Math.floor((age / 1.88));
+  }
+
+  jupiter(age) {
+    this.jupAge += Math.floor((age / 11.86));
   }
 }

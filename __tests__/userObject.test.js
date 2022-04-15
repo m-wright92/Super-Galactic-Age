@@ -27,7 +27,7 @@ describe ('userObj', () => {
   })
   
   test('should return the users age in jupiter-years', () => {
-    // user.jupiter(user.age)
+    user.jupiter(user.age)
     expect(user.jupAge).toEqual(2);
   })
 });
