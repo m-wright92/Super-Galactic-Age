@@ -2,9 +2,12 @@ import UserObject from './../src/js/userObject.js'
 
 describe ('userObj', () => {
   let user;
+  let oldUser;
 
   beforeEach(() => {
-    user = new UserObject("mike", 29)
+    user = new UserObject("mike", 29);
+    oldUser = new UserObject("jim", 84);
+
   })
 
   test('should return the user object age', () => {
@@ -34,7 +37,6 @@ describe ('userObj', () => {
   test('should show remaining years of life expectancy', () => {
     user.lifeExpect(user.age);
     expect(user.lifeExp).toEqual(44)
-    let oldUser = new UserObject("jim", 84);
     oldUser.lifeExpect(oldUser.age);
     expect(oldUser.lifeExp).toEqual(11);
   })
@@ -42,9 +44,15 @@ describe ('userObj', () => {
   test('should return remaining years of life based off different planetary age', () => {
     user.mercury();
     user.lifeExpect(user.mercAge);
-    expect(user.lifeExp).toEqual(47);
+    expect(user.lifeExp).toEqual(120-73);
+    oldUser.mercury();
+    oldUser.lifeExpect(oldUser.mercAge);
+    expect(oldUser.lifeExp).toEqual(350-73)
     user.venus();
     user.lifeExpect(user.venAge);
     expect(user.lifeExp).toEqual((73-46))
+    oldUser.venus();
+    oldUser.lifeExpect(oldUser.venAge);
+    expect(oldUser.lifeExp).toEqual((135-73))
   })
 });
