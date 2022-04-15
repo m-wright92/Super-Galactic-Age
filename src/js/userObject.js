@@ -25,12 +25,12 @@ export default class UserObject {
     this.jupAge += Math.floor((age / 11.86));
   }
 
-  lifeExpect() {
-    if(this.age <= 73) {
-      this.lifeExp = (73 - this.age);
+  lifeExpect(age) {
+    if(age <= 73) {
+      this.lifeExp = (73 - age);
       return("According to my calculations you've still got " + this.lifeExp + "years left!")
     }else {
-      this.lifeExp = (this.age - 73);
+      this.lifeExp = (age - 73);
       return("You're already " + this.lifeExp + "over the expected life span! Way to go!")
     }
   }

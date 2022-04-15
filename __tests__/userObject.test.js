@@ -32,10 +32,10 @@ describe ('userObj', () => {
   })
 
   test('should show remaining years of life expectancy', () => {
-    user.lifeExpect();
+    user.lifeExpect(user.age);
     expect(user.lifeExp).toEqual(44)
     let oldUser = new UserObject("jim", 84);
-    oldUser.lifeExpect();
+    oldUser.lifeExpect(oldUser.age);
     expect(oldUser.lifeExp).toEqual(11);
   })
 });
