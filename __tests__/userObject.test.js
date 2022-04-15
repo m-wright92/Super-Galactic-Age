@@ -1,9 +1,12 @@
-
+import UserObject from './../src/js/userObject.js'
 
 describe ('userObj', () => {
   let user;
-  test('should return the user object age', () => {
 
-    expect(user).toEqual(29);
+  beforeEach(() => {
+    user = new UserObject("mike", 29)
+  })
+  test('should return the user object age', () => {
+    expect(user.age).toEqual(29);
   })
 })
