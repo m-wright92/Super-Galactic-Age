@@ -12,22 +12,22 @@ describe ('userObj', () => {
   })
 
   test('should return the users age in mercury-years', () => {
-    user.mercury(user.age);
+    user.mercury();
     expect(user.mercAge).toEqual(120);
   })
 
   test('should return the users age in venus-years', () => {
-    user.venus(user.age)
+    user.venus()
     expect(user.venAge).toEqual(46);
   })
 
   test('should return the users age in mars-years', () => {
-    user.mars(user.age)
+    user.mars()
     expect(user.marAge).toEqual(15);
   })
   
   test('should return the users age in jupiter-years', () => {
-    user.jupiter(user.age)
+    user.jupiter()
     expect(user.jupAge).toEqual(2);
   })
 
@@ -40,6 +40,11 @@ describe ('userObj', () => {
   })
 
   test('should return remaining years of life based off different planetary age', () => {
-    user.mercury()
+    user.mercury();
+    user.lifeExpect(user.mercAge);
+    expect(user.lifeExp).toEqual(47);
+    user.venus();
+    user.lifeExpect(user.venAge);
+    expect(user.lifeExp).toEqual((73-46))
   })
 });
