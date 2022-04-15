@@ -27,9 +27,11 @@ export default class UserObject {
 
   lifeExpect() {
     if(this.age <= 73) {
-      this.lifeExp = (73 - this.age)
+      this.lifeExp = (73 - this.age);
+      return("According to my calculations you've still got " + this.lifeExp + "years left!")
     }else {
-      this.lifeExp = (this.age - 73)
+      this.lifeExp = (this.age - 73);
+      return("You're already " + this.lifeExp + "over the expected life span! Way to go!")
     }
   }
 }
