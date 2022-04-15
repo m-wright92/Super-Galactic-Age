@@ -11,18 +11,22 @@ export default class UserObject {
 
   mercury() {
     this.mercAge += Math.floor((this.age / 0.24));
+    return this;
   }
 
   venus() {
     this.venAge += Math.floor((this.age / 0.62));
+    return this;
   }
 
   mars() {
     this.marAge += Math.floor((this.age / 1.88));
+    return this;
   }
 
   jupiter() {
     this.jupAge += Math.floor((this.age / 11.86));
+    return this;
   }
 
   lifeExpect(age) {

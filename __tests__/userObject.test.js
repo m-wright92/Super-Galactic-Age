@@ -55,4 +55,12 @@ describe ('userObj', () => {
     oldUser.lifeExpect(oldUser.venAge);
     expect(oldUser.lifeExp).toEqual((135-73))
   })
+
+  test('should allow methods to chain/cascade', () => {
+    user.mercury().venus().mars().jupiter();
+    expect(user.mercAge).toEqual(120);
+    expect(user.venAge).toEqual(46);
+    expect(user.marAge).toEqual(15);
+    expect(user.jupAge).toEqual(2)
+  })
 });
