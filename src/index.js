@@ -22,5 +22,15 @@ $(document).ready(function() {
     $("#jup").text(newUser.jupAge);
   });
 
-
+  $("#life").on("click", function() {
+    let mercResult = newUser.lifeExpect(newUser.mercAge);
+    let venResult = newUser.lifeExpect(newUser.venAge);
+    let marResult = newUser.lifeExpect(newUser.marAge);
+    let jupResult = newUser.lifeExpect(newUser.jupAge);
+    $("#merc-exp").text(mercResult + " on Mercury!");
+    $("#ven-exp").text(venResult + " on Venus");
+    $("#mar-exp").text(marResult + " on Mars");
+    $("#jup-exp").text(jupResult + "on Jupiter");
+    $("p.hidden").toggle("hidden");
+  });
 });
