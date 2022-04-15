@@ -13,10 +13,13 @@ $(document).ready(function() {
     let name = $("#name-input").val().trim();
     let age = $("#age").val();
     newUser = new UserObject(name, age);
-    $("#info").toggle("hidden");
+    $("#user-data").toggle("hidden");
     $("#planetary-age").toggle("hidden");
     newUser.mercury().venus().mars().jupiter();
     $("#merc").text(newUser.mercAge);
+    $("#ven").text(newUser.venAge);
+    $("#mar").text(newUser.marAge);
+    $("#jup").text(newUser.jupAge);
   });
 
 

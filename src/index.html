@@ -13,7 +13,7 @@
     </div>
   </div>
   <div class="container">
-    <div id="user-date">
+    <div id="user-data">
       <div class="form">
         <input type="text" name="user-name" id="name-input" placeholder="Enter name here:">
         <label for="age">How old are you?</label>
@@ -23,7 +23,26 @@
     </div>
 
     <div class="hidden" id="planetary-age">
-      <p>Your age on Mercury would be <span id="merc"></span> years old!</p>
+      <p>Your age on Mercury would be <span id="merc"></span> years old! Aging like a fine wine!</p>
+      <p class="hidden" id="mercExp"><br></p>
+
+      <p>Your age on Venus would be <span id="ven"></span> years old!</p>
+      <p class="hidden" id="venExp"><br></p>
+
+      <p>Your age on Mars would be <span id="mar"></span> years old! Oh, to be young again.</p>
+      <p class="hidden" id="marExp"></p>
+
+      <p>Your age on Jupiter would be <span id="jup"></span> years old! Sheesh, still a kid!</p>
+      <p class="hidden" id="jupExp"><br></p>
+      <br><br>
+      
+      <div>
+        <label for="life">How close are you to the average life exptency?</label>
+        <div>
+          <button id="life">Find out!</button>
+        </div>
+      </div>
+      
     </div>
   </div>
 </body>
