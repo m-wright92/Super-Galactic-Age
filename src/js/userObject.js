@@ -5,7 +5,7 @@ export default class UserObject {
     this.mercAge = 0;
   }
 
-  mercury() {
-
+  mercury(age) {
+    this.mercAge += Math.floor((age / 0.24));
   }
 }

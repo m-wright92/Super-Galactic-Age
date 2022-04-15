@@ -12,6 +12,7 @@ describe ('userObj', () => {
   })
 
   test('should return the users age in mercury-years', () => {
+    user.mercury(user.age);
     expect(user.mercAge).toEqual(120)
   })
 })
