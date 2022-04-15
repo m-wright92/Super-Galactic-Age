@@ -30,4 +30,12 @@ describe ('userObj', () => {
     user.jupiter(user.age)
     expect(user.jupAge).toEqual(2);
   })
+
+  test('should show remaining years of life expectancy', () => {
+    user.lifeExpect();
+    expect(user.lifeExp).toEqual(44)
+    let oldUser = new UserObject("jim", 84);
+    oldUser.lifeExpect();
+    expect(oldUser.lifeExp).toEqual(11);
+  })
 });

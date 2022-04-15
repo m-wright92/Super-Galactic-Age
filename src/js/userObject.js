@@ -6,6 +6,7 @@ export default class UserObject {
     this.venAge = 0;
     this.marAge = 0;
     this.jupAge = 0;
+    this.lifeExp = 0;
   }
 
   mercury(age) {
@@ -22,5 +23,13 @@ export default class UserObject {
 
   jupiter(age) {
     this.jupAge += Math.floor((age / 11.86));
+  }
+
+  lifeExpect() {
+    if(this.age <= 73) {
+      this.lifeExp = (73 - this.age)
+    }else {
+      this.lifeExp = (this.age - 73)
+    }
   }
 }
