@@ -1,31 +1,35 @@
-# (Application Name)
+# Super Galactic Age
 
-#### (Brief Description of Application)
+#### A site for finding your age on another planet
 
-#### By (Your Name Here)
+#### By Mike Wright
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* HTML
+* CSS
+* JavaScript
+* NPM
+* Node
 
 ## Description
 
+This site allows users to input their age and see what their age would be on Mercury, Venus, Mars, or Jupiter. I've also added in a functionality to show their age stacks up against the average life expectancy of a human if they were to be living on those planets.
+
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Clone this repository from the "code" drop down menu.
+* After cloning, navigate to the root directory of the repository using your terminal and run the `npm install` command to install all necessary dependencies.
+* Run the `npm run start` command to see the site in action.
+* Optionally to see all TDD tests you can run `npm run test`
+
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* No known bugs.
 
 ## License
 
-## Contact Information
+MIT Licensed
+
+Copyright (c) date 04/15/22 Mike Wright
